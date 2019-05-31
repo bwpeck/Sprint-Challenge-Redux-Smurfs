@@ -52,10 +52,10 @@ class App extends Component {
 
 const mapStateToProps = state => {
   return {
-  smurfs: state.smurfs,
-  error: state.error,
-  loading: state.loading,
+    smurfs: state.smurfs,
+    error: state.error,
+    loading: state.loading,
   }
 };
 
-export default connect(mapStateToProps, { getSmurfs, addSmurf } )(App);
+export default connect(mapStateToProps, { getSmurfs, addSmurf })(App);
